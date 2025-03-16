@@ -1,0 +1,102 @@
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+    text-align: center
+}
+
+strong{
+    color: red;
+    font-size: 1.3em;
+    
+}
+
+.modal> .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid;
+    border-radius: 8px;
+    padding: 3px;
+}
+
+.modal{
+    display: grid;
+    place-items: center;
+    width: 500px;
+}
+
+.modal > .content > button{
+align-self: flex-end;
+cursor: pointer;
+}
+
+.modal > .content > button:hover{
+    background-color: rgba(255, 0, 0, 0.588);
+}
+
+input{
+    cursor: pointer;
+    margin-bottom: 5px;
+    box-shadow: 3px 3px 3px 3px black;
+    font-style: italic;
+    font-weight: 700;
+    
+}
+
+
+input:hover{
+    color: green;
+}
+
+.modal :nth-child(3){
+    font-weight: bold;
+    font-size: 1.2em;
+    color: red;
+}
+
+.content{
+    opacity: 0;
+    animation:revers 1s ease-in-out forwards;
+    transition: all;
+    background-color: white;
+}
+
+.content-on {
+    opacity: 1;
+    transition: all;
+    animation:anima 1s ease-in-out forwards;
+}
+
+
+@keyframes anima {
+    from{
+        filter: blur(15px);
+        transform:scale(0) ;
+    }
+    to{
+        filter: blur(0);
+        transform:scale(1) ;
+    }
+}
+
+@keyframes revers {
+    
+    from{
+        opacity: 1;
+        transform: scale(1);
+    }
+    
+    to{
+        
+        filter: blur(15px);
+        opacity: 0;
+        transform: scale(0);
+    }
+    
+}

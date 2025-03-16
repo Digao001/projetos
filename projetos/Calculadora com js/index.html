@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Eval</title>
+</head>
+<body>
+<div id="container">
+    <input disabled id="display" class="display">
+
+    <input type="button" value="9" onclick="insert(this)">
+    <input type="button" value="8" onclick="insert(this)">
+    <input type="button" value="7" onclick="insert(this)">
+    <input type="button" value="6" onclick="insert(this)">
+    <input type="button" value="5" onclick="insert(this)">
+    <input type="button" value="4" onclick="insert(this)">
+    <input type="button" value="3" onclick="insert(this)">
+    <input type="button" value="2" onclick="insert(this)">
+    <input type="button" value="1" onclick="insert(this)">
+    <input type="button" value="0" onclick="insert(this)">
+    <input type="button" value="+" onclick="insert(this)">
+    <input type="button" value="-" onclick="insert(this)">
+    <input type="button" value="*" onclick="insert(this)">
+    <input type="button" value="/" onclick="insert(this)">
+    <input type="button" value="C" onclick="clearAll()">
+    <input type="button" value="=" onclick="equal(this)">
+</div>
+
+<script>
+     function insert(component){
+        let display = document.querySelector('#display')
+        display.value = display.value + component.value
+     }
+
+     function equal(component){
+        let display = document.getElementById('display')
+        if (display){
+            display.value = eval (display.value)
+        }
+     }
+
+     function clearAll(){
+        let display = document.querySelector('#display')
+        display.value = ''
+     }
+</script>
+</body>
+</html>

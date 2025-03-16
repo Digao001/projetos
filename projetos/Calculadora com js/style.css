@@ -1,0 +1,20 @@
+#container {
+    width: 350px;
+    height: 20px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    word-wrap: break-word;
+}
+
+.display {
+    width: 325px;
+    margin-bottom: 5px;
+}
+
+input {
+   cursor: pointer;
+   width: 80px;
+   height: 50px;
+}

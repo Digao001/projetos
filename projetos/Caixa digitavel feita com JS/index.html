@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixa digitável</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    
+<div class="container">
+    
+    <textarea name="" id="textarea" oninput="digite()" placeholder="Digite aqui..."></textarea>
+    <div id="res">Resultado</div>
+    <div id="res1"></div>
+   
+</div>
+<h1>Exemplo de caixa digitável, feito com html, css e Java Script.</h1>
+<script>
+    function digite(){
+        
+
+       var valor = document.getElementById('textarea').value
+
+       document.querySelector('#res').innerHTML = valor
+
+       var res1 = document.querySelector('#res1')
+
+        if (valor.length >= 60 ){
+
+         res1.innerHTML = 'Digite menos que 60 caracteres'
+}
+
+else {
+     res1.innerHTML = 'Continue Escrevendo...'
+}
+    }
+
+
+
+</script>
+</body>
+</html>

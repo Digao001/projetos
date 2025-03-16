@@ -1,0 +1,45 @@
+p{
+    font-size: 1.5em;
+    text-align: justify;
+}
+
+section{
+    display: grid;
+    place-items: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+ @keyframes anima {
+    from{
+        
+        transform: translateX(-50%)
+
+    }
+    to{
+        
+        transform: translateX(0%)
+    }
+}
+ 
+
+.anima{
+    opacity: 1;
+    animation: anima 3s linear infinite ;
+    
+} 
+
+.hidden {
+    opacity: 0;
+    filter: blur(15px);
+    transition: all 1.2s;
+    transform: translateX(-100%);
+}
+
+.show {
+ 
+    opacity: 1;
+    filter: blur(0);
+    transition: all 1.2s;
+    transform: translateX(0);
+}
