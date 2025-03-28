@@ -1,0 +1,101 @@
+.botao {
+    display: none;
+    
+}
+
+.botaosim{
+    display: block;
+}
+
+.xis {
+    font-size: 20em;
+    color: red;
+    position: absolute;
+    bottom: 500px;
+    display: none;
+
+}
+
+.xisb {
+    font-size: 20em;
+    color: red;
+    position: absolute;
+    bottom: 500px;
+    display: block;
+    bottom: 400px;
+}
+
+#perdeu{
+    font-size: 4em;
+    font-weight: bold;
+    color: red;
+}
+
+#resultado{
+    font-size: 2em;
+}
+
+#contagem{
+    font-size: 2em;
+    color: red;
+    font-weight: bold;
+}
+
+#tentativa{
+    font-size: 2em;
+    font-weight: bold;
+    color: green;
+    border-radius: 3px;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 800px;
+    border: 5px solid;
+    border-radius: 35px;
+    box-shadow: 5px 5px 5px;
+}
+
+#pronto {
+    margin: 10px 0px;
+    font-size: 1.2em;
+}
+
+#tentar{
+    font-size: 2em;
+    font-weight: bold;
+    border: 2px solid blueviolet;
+    border-radius: 4px;
+}
+
+.escolher{
+    display: none;
+    
+}
+
+.escolhersim{
+    display: block;
+    margin: 20px 0px;
+    font-size: 1.2em;
+    font-weight: bold;
+    height: 35px;
+    text-align: center;
+}
+
+#numero{
+    width: 250px;
+    height: 35px;
+    text-align: center;
+}
