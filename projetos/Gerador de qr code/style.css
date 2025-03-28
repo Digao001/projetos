@@ -1,0 +1,52 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    background-color: rgba(0, 128, 0, 0.552);
+    width: 500px;
+    height: 500px;
+    border: 3px solid;
+    border-radius: 7px;
+    box-shadow: 7px 7px 7px 7px black;
+    
+}
+
+.pai{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container :nth-child(1){
+    margin-bottom: 10px;
+    font-size: 2.5em;
+    text-decoration: underline;
+}
+
+.container :nth-child(2){
+    margin-top: 10px;
+    width: 350px;
+    font-size: 1.5em;
+}
+
+.container :nth-child(3){
+    margin-top: 10px;
+    width: 200px;
+    font-size: 1.5em;
+}
+
+.container :nth-child(4){
+    margin-top: 10px;
+    transition: 0.5s;
+    width: 300px;
+}
+
+button:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
