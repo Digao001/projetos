@@ -1,0 +1,46 @@
+*{
+    list-style: none;
+}
+
+nav{
+    margin: 5px;
+}
+
+nav li {
+    font-size: 2em;
+    border: 2px solid;
+    width: 150px;
+    text-align: center;
+    margin-top: 3px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px black;
+    text-shadow: 1px 1px 1px black;
+}
+
+nav li:hover{
+    background-color: rgba(128, 128, 128, 0.479);
+    transition: .5s;
+    cursor: pointer;
+}
+
+.hidden{
+    display: none;
+}
+
+.show{
+    display: block;
+    transition: all;
+    animation: drop 1s linear forwards;
+}
+
+@keyframes drop {
+    from{
+     filter: blur(2px);
+     opacity: 0;
+    }
+    to{
+     filter: blur(0);
+     opacity: 1;
+    }
+ 
+ }
