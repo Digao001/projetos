@@ -1,0 +1,57 @@
+img {
+    min-width: 70vw;
+    height: 500px;
+    position: absolute;
+    display: none;
+    border: 2px solid;
+    box-shadow: 5px 5px 5px black;
+}
+
+.container :nth-child(5){
+    width: 720px;
+    height: 280px;
+}
+
+.container {
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+
+
+
+p {
+    position: absolute;
+    text-align: center;
+    font-size: 2em;
+    left: 325px;
+    font-weight: bold;
+    font-style: italic;
+}
+.show{
+    animation:anima 2s ease-in-out forwards;
+    display: block;
+    border-radius: 7px;
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes anima {
+    from {
+        transform: translateX(-100vw);
+        opacity: 0;
+        filter: blur(15px);
+        transition: all 2s;
+    }
+
+    to {
+        transform: translateX(0);
+        transition: all 2s;
+        opacity: 1;
+        filter: blur(0);
+    }
+}
