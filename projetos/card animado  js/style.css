@@ -1,0 +1,116 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    margin: 10px;
+    display: flex;
+    width: 400px;
+    
+}
+
+.container > img{
+    width: 200px;
+    cursor: pointer;
+    border: 2px solid green;
+
+}
+
+.img-normal{
+    width: 200px;
+    cursor: pointer;
+    border: 2px solid green;
+}
+
+.container > p {
+font-weight: 500;
+display: none;
+}
+
+
+
+/* animation botao */
+#botao{
+    width: 200px;
+    flex-wrap: wrap;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.botao-animation{
+    animation: botao-left 0.5s linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes botao-left{
+    from {
+        width: 200px;
+        
+    }
+    
+    to {
+        width: 30px;
+        
+    }
+}
+
+mark {
+    background-color: white;
+    color: red;
+    font-weight: bold;
+}
+
+strong {
+    color: green;
+    font-weight: bold;
+}
+
+
+.img-expande{
+    transform: scale(3);
+    transition: 0.5s;
+    border: 2px solid;
+}
+
+.img-reduce{
+    transform: scale(1);
+    transition: 0.5s;
+}
+
+.body-color{
+    background-color: rgba(128, 128, 128, 0.425);
+}
+
+.pai {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#coquelita{
+    position: absolute;
+    top: 295px;
+    font-size: 2em;
+    font-weight: bold;
+    border: 2px solid;
+    padding: 3px;
+    border-radius: 10px;
+    display: none;
+}
+
+.coquelita-animation{
+    animation: mover 0.5s linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes mover {
+    from {
+        transform: translateY(-500px);
+    }
+    to {
+        transform: translateY(0px);
+    }
+}
