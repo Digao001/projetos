@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Verifique Se o Empréstimo está disponível</h1>
+    <div class="container">
+        <!-- Dados -->
+         
+         <div class="display">
+             <h2>Nome</h2>
+             <input type="text" id="nome" required maxlength="12">
+                     
+                     <!-- Label nome -->
+             <label for="nome" class="label-nome"><button class="botao">OK</button></label><p id="ok-nome">OK</p>
+                     <!-- Label nome -->
+             <h2>Idade</h2>
+             <input type="number" id="idade" required>
+                     
+                     <!-- Label idade -->
+                     <label for="idade" class="label-idade"><button class="botao">OK</button></label><p id="ok-idade">OK</p>
+                     <!-- Label idade -->
+             <h2>Profissão</h2>
+             <input type="text" maxlength="12" id="profissao" required>
+                     
+                     <!-- Label profissao -->
+                     <label for="profissao" class="label-profissao"><button class="botao">OK</button></label><p id="ok-profissao">OK</p>
+                     <!-- Label profissao -->
+             <h2>Média Salarial</h2>
+             <input type="number" maxlength="12" id="salario" required>
+             <!-- Label salario -->
+                     <label for="salario" class="label-salario"><button class="botao">OK</button></label><p id="ok-salario">OK</p> <br><br>
+                     <!-- Label salario -->
+         </div>
+         <!-- Dados -->
+          <!-- Botao -->
+         <div class="analisar-dados">
+             <input type="button"value="Analisar Dados" id="analisar"><br><br>
+             <!-- Botao -->
+                 
+             <!-- Preenchidos -->
+              <div class="preenchidos">
+                  <input type="text" disabled id="nome-preenchido" value="Nome">
+                  <input type="text" disabled id="idade-preenchido" value="Idade">
+                  <input type="text" disabled id="profissao-preenchido" value="Profissão">
+                  <input type="text" disabled id="salario-preenchido" value="Salário">
+              </div>
+         </div>
+</div>
+ <p id="resultado"></p>
+    <script src="java.js"></script>
+</body>
+</html>
