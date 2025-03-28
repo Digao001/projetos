@@ -1,0 +1,95 @@
+.container img{
+    width: 350px;
+    height: 300px;
+    position: absolute;
+    border: 5px solid;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 7px;
+    animation: slide 2s ease-in-out forwards;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+p{
+    position: absolute;
+    bottom: 65px;
+    text-align: center;
+}
+
+
+span{
+    font-size: 2rem;
+    background-color: gray;
+    box-shadow: 7px 7px 7px black;
+    padding: 3px;
+    border-radius: 5px;
+    animation: back 10s ease-in-out infinite;
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+.titulo {
+    
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+@keyframes slide {
+    from {
+        transform: translateX(-100vw);
+        filter: blur(15px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide1 {
+    from {    
+        filter: blur(15px);
+        opacity: 0;
+    }
+    to {  
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+@keyframes back {
+
+
+    0%{
+        background-color: forestgreen;
+    }
+
+    20% {
+        background-color: purple;
+    }
+
+    50% {
+        background-color: gray;
+    }
+
+    70%{
+        background-color: pink;
+    }
+
+    90%{
+        background-color: black;
+    }
+
+    100%{
+        background-color: blue;
+        
+    }
+}
