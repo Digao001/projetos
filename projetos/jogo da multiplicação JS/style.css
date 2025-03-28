@@ -1,0 +1,45 @@
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.display{
+    text-align: center;
+    border: 3px dotted;
+    box-shadow: 6px 6px 10px 6px black;
+    padding: 20px;
+    color: white;
+    background: linear-gradient(to right, black, gray);
+    text-shadow: 2px 2px black;
+    width: 530px;
+    height: 350px;
+    font-size: 1.5em;
+}
+
+input{
+    text-align: center;
+    text-shadow: 1px 1px black;
+    color: gray;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+h1{
+    text-decoration: underline;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+
+input:hover{
+    cursor: pointer;
+    color: green;
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+span{
+    display: block;
+}
+
+
