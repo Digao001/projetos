@@ -1,0 +1,13 @@
+#seta{
+    font-size: 2em;
+    border: 2px solid red;
+    width: 43px;
+    text-align: center;
+    border-radius: 50%;
+    color: white;
+    background-color: black;
+    position: sticky;
+    top: 850px;
+    cursor: pointer;
+}
+
