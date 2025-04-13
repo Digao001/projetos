@@ -1,0 +1,48 @@
+fieldset{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 250px;
+    text-align: center;
+    margin: 0 auto;
+    box-shadow: 7px 7px 3px black;
+    border-radius: 5px;
+    background-color: rgba(128, 128, 128, 0.479);
+}
+
+.gerado {
+    margin-top: 20px;
+    text-align: center;
+    
+}
+
+fieldset input{
+    margin-top: 10px;
+    width: 170px;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+legend {
+    background-color: rgba(0, 128, 0, 0.774);
+    border-radius: 7px;
+}
+
+label {
+    text-decoration: underline;
+    margin-top: 5px;
+}
+
+button {
+    width: 100px;
+    text-align: center;
+    margin: 0 auto;
+}
