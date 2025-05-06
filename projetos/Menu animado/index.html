@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criador de curriculum</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animacao.css">
+    <script src="menu.js" defer></script>
+</head>
+
+<body>
+    <nav>
+        <ul class="lista-menu">
+            <span id="menu">Menu</span>
+            <!-- Tamanho da box -->
+            <li class="item-menu" id="tamanho-box">Tamanho da box </li>
+            <ul class="t-box-display">
+                <li class="t-box-item">800px</li>
+                <li class="t-box-item">500px</li>
+                <li class="t-box-item">300px</li>
+                <li class="t-box-item">100px</li>
+                <input type="text" id="box" class="t-box-item" placeholder="Definir...">
+            </ul>
+            <!-- Fonte -->
+            <li class="item-menu" id="fonte">Fonte</li>
+            <ul class="t-fonte-display">
+                <li class="t-fonte-item">Arial</li>
+                <li class="t-fonte-item">Verdana</li>
+                <li class="t-fonte-item">Roboto</li>
+                <li class="t-fonte-item">Default</li>
+            </ul>
+            <!-- Tamanho da fonte -->
+            <li class="item-menu" id="t-font-size">Tamanho da fonte</li>
+            <ul class="t-size-font">
+                <li>
+                    <label for="t-font" class="t-font">Defina o tamanho:</label><br>
+                    <input type="text" placeholder="Tamanho da fonte..." id="t-font" class="t-font">
+                </li>
+                </li>
+            </ul>
+            <!-- Cor da fonte -->
+            <li class="item-menu" id="corFonte">Cor da fonte</li>
+            <ul class="colorFont">
+                <li><input type="color"></li>
+            </ul>
+            <!-- Alinhamento -->
+            <li class="item-menu" id="alinhamento">Alinhamento</li>
+            <ul class="alinhamento-display">
+                <li><label for="alinhamento">Defina:</label></li>
+                <li><input type="text" placeholder="Digite..."></li>
+            </ul>
+            <!-- Background -->
+            <li class="item-menu" id="background">Background</li>
+            <ul class="background-display">
+                <li><input type="color"></li>
+            </ul>
+            <!-- Estilo da borda -->
+            <li class="item-menu" id="borda">Estilo da borda</li>
+            <ul class="estilo-borda">
+                <li class="borda-item">Dashed</li>
+                <li class="borda-item">Solid</li>
+                <li class="borda-item">Dotted</li>
+                <li class="borda-item">Double</li>
+                <li class="borda-item">Groove</li>
+                <li class="borda-item">Ridge</li>
+                <li class="borda-item">Inset</li>
+                <li class="borda-item">Outset</li>
+            </ul>
+        </ul>
+    </nav>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+#menu:hover {
+    background-color: black;
+    transition: .4s;
+}
+
+.item-menu:hover {
+    background-color: black;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.t-box-item:hover{
+    background-color: rgba(33, 192, 33, 0.795);
+    color: white;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.t-fonte-item:hover{
+    background-color: rgba(33, 192, 33, 0.795);
+    color: white;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.borda-item:hover{
+    background-color: rgba(33, 192, 33, 0.795);
+    color: white;
+    cursor: pointer;
+    transition: .3s;
+}
+
+@keyframes animaMenu{
+    from{
+        opacity: 0;
+        filter: blur(10px);
+    }
+    to {
+        opacity: 1;
+        filter: blur(0px);
+    }
+}
+
+@keyframes animaTop{
+    from{
+        transform: translateX(-1000%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes animaTop2{
+    from{
+        
+        transform: translateX(1000%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+
+@keyframes animaAumenta{
+    from{
+        
+        transform: rotate(360deg);
+        opacity: 0;
+    }
+    to {
+        
+        transform: rotate(0);
+        opacity: 1;
+    }
+}

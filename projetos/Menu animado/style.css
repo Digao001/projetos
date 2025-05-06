@@ -1,0 +1,169 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    list-style: none;
+}
+/* Menu em geral */
+
+input {
+    margin-top: 5px;
+    border-radius: 7px;
+}
+
+#menu {
+    border: 1px solid;
+    width: 130px;
+    text-align: center;
+    border-radius: 7px;
+    padding: 3px;
+    background-color: rgba(0, 0, 0, 0.712);
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+.lista-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.lista-menu li {
+    text-align: center;
+    padding: 3px;
+    margin-top: 3px;
+    border-radius: 7px;
+}
+
+.item-menu{
+    display: none;
+    border: 1px solid;
+    width: 130px;
+    border: 1px solid black;
+    padding: 3px;
+    background-color: gray;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    
+}
+
+.show {
+    display: block;
+    animation: animaMenu 0.5s ease forwards;
+}
+
+#menu {
+    cursor: pointer;
+}
+
+/* Sub menu tamanho da box */
+
+.t-box-display {
+    display: flex;
+    
+}
+
+.t-box-item{
+    display: none;
+    border: 2px solid;
+    margin: 0px 3px;
+    text-align: center;
+    animation: animaMenu 0.7s ease forwards;
+}
+
+.t-box-show {
+    display: block;
+}
+
+.t-box-item {
+    width: 80px;
+    font-size: 0.8em;
+}
+/* ESTILO DA FONTE */
+.t-fonte-item{
+    display: none;
+    margin: 0px 3px;
+    text-align: center;
+    border: 2px solid;
+    animation: animaMenu 1s ease forwards;
+}
+
+.t-fonte-show{
+    display: block;
+}
+
+.t-fonte-display {
+    display: flex;
+    
+}
+
+
+/* tamanho da fonte */
+
+.t-size-font{
+    display: none;
+    margin: 0px 3px;
+    text-align: center;
+    animation: animaMenu 0.5s ease forwards;
+}
+
+.t-size-show{
+    display: block;
+}
+
+/* Cor da fonte */
+
+.colorFont{
+    display: none;
+    animation: animaTop .3s ease forwards;
+    margin: 0px 3px;
+    text-align: center;
+}
+
+.colorFont-show{
+    display: block;
+}
+
+/* Alinhamento */
+
+.alinhamento-display {
+    display: none;
+    margin: 0px 3px;
+    text-align: center;
+    animation: animaAumenta 0.5s ease forwards;
+}
+
+.alinhamento-show{
+    display: block;
+}
+
+/* background */
+
+.background-display{
+    display: none;
+    margin: 0px 3px;
+    text-align: center;
+    animation: animaTop2 0.3s ease forwards;
+}
+
+.background-show{
+    display: block;
+}
+
+/* Estilo borda */
+
+.estilo-borda{
+display: flex;
+}
+
+.borda-item{
+    border: 2px solid;
+    margin: 0px 3px;
+    text-align: center;
+    display: none;
+}
+
+.borda-show{
+    display: block;
+}
