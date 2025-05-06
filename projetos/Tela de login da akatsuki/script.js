@@ -1,4 +1,4 @@
-let senha = document.getElementById("senha");
+
 let icon = document.getElementById("icon");
 let gif = document.getElementById("gif");
 
@@ -25,5 +25,17 @@ icon.addEventListener("click", ()=>{
 function fundoAdd(){
     let imagemGif = document.querySelector("#imagemGif").src = "img/TSUKUYOMI INFINITO.gif";
 }
+//Função que soletra as palavras iniciais//
+function soletrar(){
+    let h1 = document.querySelector("h1")
+    let texto = "Faça sua inscrição na Akatsuki";
+    let myArr = texto.split("");
+    myArr.forEach((e,ind)=>{
+        setTimeout(()=>{
+           h1.textContent += e
+        },200 * ind)
+    })
+    
+}
+setTimeout(soletrar, 2000)
 
-     

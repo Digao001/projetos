@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tela de login super futurista</title>
+    <title>Tela de login da akatsuki</title>
     <link rel="stylesheet" href="style.css">
+    <script src="form.js" defer></script>
     <script src="script.js" defer></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Carattere&family=Emilys+Candy&display=swap');
@@ -15,19 +16,20 @@
         <div class="background-Gif">
             <img src="" alt="" id="imagemGif">
             <div class="container">
-                <form action="" method="get">
-                    <fieldset>
-                        <legend>Login</legend>
-                        <label for="login">Login:</label>
-                        <input type="text" id="login" required name="login"> <br> <br>
-                        <label for=""senha>Senha:</label>
-                        <input type="password" id="senha" required name="senha"><br><span class="icon"><img src="img/icone-close.png" alt="" id="icon" data-state="close"></span>  <br> <br>
-                        <img src="gif/sharingan-close.gif" alt="" id="gif"><br>
-                        <button type="submit">Entrar</button>
-                        <button type="reset">Limpar</button>
-            
-                    </fieldset>
-                </form>
+                    <h1></h1>
+                    <form action="recebe.php" method="get" name="formulario">
+                        <fieldset>
+                            <legend>Cadastro</legend>
+                            <label for="login">Login:</label>
+                            <input type="text" id="login" required name="login" maxlength="9"> <br> <br>
+                            <label for=""senha>Senha:</label><span id="icone-forte">alt="">Fraca</span>
+                            <input type="password" id="senha" required name="senha" maxlength="10"><br><span class="icon"><img src="img/icone-close.png" alt="" id="icon" data-state="close"></span>  <br> <br>
+                            <img src="gif/sharingan-close.gif" alt="" id="gif"><br>
+                            <button id="cadastrar">Cadastrar</button>
+                            <button type="reset">Limpar</button>
+                        </fieldset>
+                    </form>
+                
                 
             </div>
         </div>
