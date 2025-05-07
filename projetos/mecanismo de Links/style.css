@@ -1,0 +1,45 @@
+#input-link {
+width: 300px;
+height: 20px;
+border-radius: 5px;
+border: 2px solid;
+}
+
+#resultado {
+    font-size: 3rem;
+
+    padding: 5px;
+    border-radius: 5px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    height: 100vh;
+    
+}
+
+.display {
+    border: 3px solid;
+    border-radius: 5px;
+    background-color: rgba(95, 158, 160, 0.829);
+    width: 500px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
