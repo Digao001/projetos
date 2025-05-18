@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronometro</title>
+    <style>
+        .container{
+            display: grid;
+            place-items: center;
+            
+        }
+         h1{
+            font-size: 5rem;
+         }
+          button{
+            font-size: 2rem;
+            cursor: pointer;
+          }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>...</h1>
+        <button>RESETAR</button>
+    </div>
+
+    <script>
+        let text = document.querySelector("h1");
+        let entrada;
+        let count;
+        
+       const btn = document.querySelector("button").addEventListener("click", ()=>{
+        window.location.reload();
+       })
+
+
+        function verifica() {
+            while (!entrada || entrada === "" || entrada === null || entrada.match(/[^0-9]/)) {
+                entrada = prompt("Escolha o tempo da contagem");
+            }
+
+        }
+        verifica()
+        mode()
+
+        function mode() {
+
+            let modo = prompt("Defina um modo \n Digite 1: para contagem progressiva \n Digite 2: para contagem regressiva");
+
+            try {
+                while (!modo || modo === "" || modo === null || modo.match(/[^12]/)) {
+                    alert("Escolha apenas a opção 1 ou 2");
+                    modo = prompt("Defina um tempo \n Digite 1: para contagem progressiva \n Digite 2: para contagem regressiva");
+
+                }
+            } catch (error) {
+                console.error(error)
+            }
+            if (modo == '12') {
+                throw new Error("Apenas o número 1 ou o número 2");
+
+            }
+            contagem(modo)
+        }
+
+        function contagem(modo) {
+            switch (modo) {
+                case '1':
+
+                    count = 0;
+                    const progressivo = setInterval(() => {
+                        if (count < entrada) {
+                            count++
+                            text.innerHTML = count
+                        } else {
+                            clearInterval(progressivo)
+                            text.innerHTML = "Fim"
+                        }
+                    }, 1000)
+
+                    break;
+
+                case '2':
+
+                    count = entrada;
+                    const regressivo = setInterval(() => {
+                        if (count > 0) {
+                            text.innerHTML = count
+                            count--
+                        } else {
+                            clearInterval(regressivo)
+                            text.innerHTML = "Fim"
+                        }
+                    }, 1000)
+                    break;
+            }
+        }
+
+    </script>
+</body>
+
+</html>
