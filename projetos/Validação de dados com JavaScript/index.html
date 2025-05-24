@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulário Vintage com Tabela</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <div class="form-container">
+      <h2>Formulário de Contato</h2>
+      <form action="#" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="endereco">Endereço:</label>
+        <input type="text" id="endereco" name="endereco" required>
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" required></textarea>
+
+        <button type="submit" class="submit-button" id="btn">Enviar</button>
+      </form>
+    </div>
+    <div class="table-container">
+      <h2>Dados Recebidos</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Endereço</th>
+            <th>Mensagem</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Os dados do formulário seriam inseridos aqui -->
+          <tr>
+            <td id="nomeR"></td>
+            <td id="enderecoR"></td>
+            <td id="mensagemR"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
